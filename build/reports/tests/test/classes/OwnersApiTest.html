@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class OwnersApiTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class OwnersApiTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; OwnersApiTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">2</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">5.507s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="createOwner_addingName()"></a>
+<h3 class="failures">createOwner_addingName()</h3>
+<span class="code">
+<pre>api.common.exception.InvalidResponseException: Response Status : 400
+	at api.common.CommonApiResponse.getContent(CommonApiResponse.java:36)
+	at petclinic.api.owners.data.OwnersApiClient.createOwner(OwnersApiClient.java:36)
+	at OwnersApiTest.createOwner_addingName(OwnersApiTest.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:210)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:206)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:65)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="getOwners_checkIdGreaterThanZero()"></a>
+<h3 class="failures">getOwners_checkIdGreaterThanZero()</h3>
+<span class="code">
+<pre>com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `petclinic.api.services.data.ServiceResponse` out of START_ARRAY token
+ at [Source: (String)&quot;[{&quot;id&quot;:1,&quot;firstName&quot;:&quot;George&quot;,&quot;lastName&quot;:&quot;Franklin&quot;,&quot;address&quot;:&quot;110 W. Liberty St.&quot;,&quot;city&quot;:&quot;Madison&quot;,&quot;telephone&quot;:&quot;6085551023&quot;,&quot;pets&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Leo&quot;,&quot;birthDate&quot;:&quot;2010/09/07&quot;,&quot;type&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;cat&quot;},&quot;owner&quot;:1,&quot;visits&quot;:[]}]},{&quot;id&quot;:2,&quot;firstName&quot;:&quot;Betty&quot;,&quot;lastName&quot;:&quot;Davis&quot;,&quot;address&quot;:&quot;638 Cardinal Ave.&quot;,&quot;city&quot;:&quot;Sun Prairie&quot;,&quot;telephone&quot;:&quot;6085551749&quot;,&quot;pets&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;Basil&quot;,&quot;birthDate&quot;:&quot;2012/08/06&quot;,&quot;type&quot;:{&quot;id&quot;:6,&quot;name&quot;:&quot;hamster&quot;},&quot;owner&quot;:2,&quot;visits&quot;:[]}]},{&quot;id&quot;:3,&quot;firstName&quot;:&quot;Eduardo&quot;,&quot;[truncated 8182 chars]; line: 1, column: 1]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1468)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1242)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1190)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeFromArray(BeanDeserializer.java:604)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:190)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:166)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4526)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3468)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:231)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at api.common.CommonApiResponse.getContent(CommonApiResponse.java:32)
+	at petclinic.api.owners.data.OwnersApiClient.getOwners(OwnersApiClient.java:30)
+	at OwnersApiTest.getOwners_checkIdGreaterThanZero(OwnersApiTest.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:210)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:206)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:65)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">createOwner_addingName()</td>
+<td class="failures">4.552s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">getOwners_checkIdGreaterThanZero()</td>
+<td class="failures">0.955s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>18:48:16.593 - [OwnersApiClient] INFO  : Initiated petclinic.api.owners.data.OwnersApiClient instance
+18:48:16.947 - [ApiCaller] INFO  : Request:
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/owners
+Body:
+{&quot;id&quot;:null,&quot;firstName&quot;:&quot;Monica&quot;,&quot;lastName&quot;:null,&quot;address&quot;:null,&quot;city&quot;:null,&quot;telephone&quot;:null,&quot;pets&quot;:null}
+18:48:19.391 - [ApiCaller] INFO  : Response:
+HTTP/1.1 400 
+
+18:48:19.595 - [OwnersApiClient] INFO  : Initiated petclinic.api.owners.data.OwnersApiClient instance
+18:48:19.596 - [ApiCaller] INFO  : Request:
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/owners
+Body:			&lt;none&gt;
+18:48:20.368 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+[{&quot;id&quot;:1,&quot;firstName&quot;:&quot;George&quot;,&quot;lastName&quot;:&quot;Franklin&quot;,&quot;address&quot;:&quot;110 W. Liberty St.&quot;,&quot;city&quot;:&quot;Madison&quot;,&quot;telephone&quot;:&quot;6085551023&quot;,&quot;pets&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Leo&quot;,&quot;birthDate&quot;:&quot;2010/09/07&quot;,&quot;type&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;cat&quot;},&quot;owner&quot;:1,&quot;visits&quot;:[]}]},{&quot;id&quot;:2,&quot;firstName&quot;:&quot;Betty&quot;,&quot;lastName&quot;:&quot;Davis&quot;,&quot;address&quot;:&quot;638 Cardinal Ave.&quot;,&quot;city&quot;:&quot;Sun Prairie&quot;,&quot;telephone&quot;:&quot;6085551749&quot;,&quot;pets&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;Basil&quot;,&quot;birthDate&quot;:&quot;2012/08/06&quot;,&quot;type&quot;:{&quot;id&quot;:6,&quot;name&quot;:&quot;hamster&quot;},&quot;owner&quot;:2,&quot;visits&quot;:[]}]},{&quot;id&quot;:3,&quot;firstName&quot;:&quot;Eduardo&quot;,&quot;lastName&quot;:&quot;Rodriquez&quot;,&quot;address&quot;:&quot;2693 Commerce St.&quot;,&quot;city&quot;:&quot;McFarland&quot;,&quot;telephone&quot;:&quot;6085558763&quot;,&quot;pets&quot;:[{&quot;id&quot;:4,&quot;name&quot;:&quot;Jewel&quot;,&quot;birthDate&quot;:&quot;2010/03/07&quot;,&quot;type&quot;:{&quot;id&quot;:2,&quot;name&quot;:&quot;dog&quot;},&quot;owner&quot;:3,&quot;visits&quot;:[]},{&quot;id&quot;:3,&quot;name&quot;:&quot;Rosy&quot;,&quot;birthDate&quot;:&quot;2011/04/17&quot;,&quot;type&quot;:{&quot;id&quot;:2,&quot;name&quot;:&quot;dog&quot;},&quot;owner&quot;:3,&quot;visits&quot;:[]}]},{&quot;id&quot;:4,&quot;firstName&quot;:&quot;Harold&quot;,&quot;lastName&quot;:&quot;Davis&quot;,&quot;address&quot;:&quot;563 Friendly St.&quot;,&quot;city&quot;:&quot;Windsor&quot;,&quot;telephone&quot;:&quot;6085553198&quot;,&quot;pets&quot;:[{&quot;id&quot;:5,&quot;name&quot;:&quot;Iggy&quot;,&quot;birthDate&quot;:&quot;2010/11/30&quot;,&quot;type&quot;:{&quot;id&quot;:3,&quot;name&quot;:&quot;lizard&quot;},&quot;owner&quot;:4,&quot;visits&quot;:[]}]},{&quot;id&quot;:5,&quot;firstName&quot;:&quot;Peter&quot;,&quot;lastName&quot;:&quot;McTavish&quot;,&quot;address&quot;:&quot;2387 S. Fair Way&quot;,&quot;city&quot;:&quot;Madison&quot;,&quot;telephone&quot;:&quot;6085552765&quot;,&quot;pets&quot;:[{&quot;id&quot;:6,&quot;name&quot;:&quot;George&quot;,&quot;birthDate&quot;:&quot;2010/01/20&quot;,&quot;type&quot;:{&quot;id&quot;:4,&quot;name&quot;:&quot;snake&quot;},&quot;owner&quot;:5,&quot;visits&quot;:[{&quot;id&quot;:5,&quot;date&quot;:&quot;2020/12/03&quot;,&quot;description&quot;:&quot;this is for test&quot;,&quot;pet&quot;:6}]}]},{&quot;id&quot;:6,&quot;firstName&quot;:&quot;Jean&quot;,&quot;lastName&quot;:&quot;Coleman&quot;,&quot;address&quot;:&quot;105 N. Lake St.&quot;,&quot;city&quot;:&quot;Monona&quot;,&quot;telephone&quot;:&quot;6085552654&quot;,&quot;pets&quot;:[{&quot;id&quot;:8,&quot;name&quot;:&quot;Max&quot;,&quot;birthDate&quot;:&quot;2012/09/04&quot;,&quot;type&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;cat&quot;},&quot;owner&quot;:6,&quot;visits&quot;:[{&quot;id&quot;:3,&quot;date&quot;:&quot;2013/01/03&quot;,&quot;description&quot;:&quot;neutered&quot;,&quot;pet&quot;:8},{&quot;id&quot;:2,&quot;date&quot;:&quot;2013/01/02&quot;,&quot;description&quot;:&quot;rabies shot&quot;,&quot;pet&quot;:8}]},{&quot;id&quot;:7,&quot;name&quot;:&quot;Samantha&quot;,&quot;birthDate&quot;:&quot;2012/09/04&quot;,&quot;type&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;cat&quot;},&quot;owner&quot;:6,&quot;visits&quot;:[{&quot;id&quot;:4,&quot;date&quot;:&quot;2013/01/04&quot;,&quot;description&quot;:&quot;spayed&quot;,&quot;pet&quot;:7},{&quot;id&quot;:1,&quot;date&quot;:&quot;2013/01/01&quot;,&quot;description&quot;:&quot;rabies shot&quot;,&quot;pet&quot;:7}]}]},{&quot;id&quot;:7,&quot;firstName&quot;:&quot;Jeff&quot;,&quot;lastName&quot;:&quot;Black&quot;,&quot;address&quot;:&quot;1450 Oak Blvd.&quot;,&quot;city&quot;:&quot;Monona&quot;,&quot;telephone&quot;:&quot;6085555387&quot;,&quot;pets&quot;:[{&quot;id&quot;:9,&quot;name&quot;:&quot;Lucky&quot;,&quot;birthDate&quot;:&quot;2011/08/06&quot;,&quot;type&quot;:{&quot;id&quot;:5,&quot;name&quot;:&quot;bird&quot;},&quot;owner&quot;:7,&quot;visits&quot;:[]}]},{&quot;id&quot;:8,&quot;firstName&quot;:&quot;Maria&quot;,&quot;lastName&quot;:&quot;Escobito&quot;,&quot;address&quot;:&quot;345 Maple St.&quot;,&quot;city&quot;:&quot;Madison&quot;,&quot;telephone&quot;:&quot;6085557683&quot;,&quot;pets&quot;:[{&quot;id&quot;:10,&quot;name&quot;:&quot;Mulligan&quot;,&quot;birthDate&quot;:&quot;2007/02/24&quot;,&quot;type&quot;:{&quot;id&quot;:2,&quot;name&quot;:&quot;dog&quot;},&quot;owner&quot;:8,&quot;visits&quot;:[]}]},{&quot;id&quot;:9,&quot;firstName&quot;:&quot;David&quot;,&quot;lastName&quot;:&quot;Schroeder&quot;,&quot;address&quot;:&quot;2749 Blackhawk Trail&quot;,&quot;city&quot;:&quot;Madison&quot;,&quot;telephone&quot;:&quot;6085559435&quot;,&quot;pets&quot;:[{&quot;id&quot;:11,&quot;name&quot;:&quot;Freddy&quot;,&quot;birthDate&quot;:&quot;2010/03/09&quot;,&quot;type&quot;:{&quot;id&quot;:5,&quot;name&quot;:&quot;bird&quot;},&quot;owner&quot;:9,&quot;visits&quot;:[]}]},{&quot;id&quot;:10,&quot;firstName&quot;:&quot;Carlos&quot;,&quot;lastName&quot;:&quot;Estaban&quot;,&quot;address&quot;:&quot;2335 Independence La.&quot;,&quot;city&quot;:&quot;Waunakee&quot;,&quot;telephone&quot;:&quot;6085555487&quot;,&quot;pets&quot;:[{&quot;id&quot;:12,&quot;name&quot;:&quot;Lucky&quot;,&quot;birthDate&quot;:&quot;2010/06/24&quot;,&quot;type&quot;:{&quot;id&quot;:2,&quot;name&quot;:&quot;dog&quot;},&quot;owner&quot;:10,&quot;visits&quot;:[]},{&quot;id&quot;:13,&quot;name&quot;:&quot;Sly&quot;,&quot;birthDate&quot;:&quot;2012/06/08&quot;,&quot;type&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;cat&quot;},&quot;owner&quot;:10,&quot;visits&quot;:[]}]},{&quot;id&quot;:13,&quot;firstName&quot;:&quot;Matthew&quot;,&quot;lastName&quot;:&quot;Perry&quot;,&quot;address&quot;:&quot;Wall street&quot;,&quot;city&quot;:&quot;Sun Prairie&quot;,&quot;telephone&quot;:&quot;7085551749&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:14,&quot;firstName&quot;:&quot;Elizabeth&quot;,&quot;lastName&quot;:&quot;Davies&quot;,&quot;address&quot;:&quot;A-10&quot;,&quot;city&quot;:&quot;PUNE&quot;,&quot;telephone&quot;:&quot;12345&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:16,&quot;firstName&quot;:&quot;Elizabeth&quot;,&quot;lastName&quot;:&quot;Davies&quot;,&quot;address&quot;:&quot;A-10&quot;,&quot;city&quot;:&quot;PUNE&quot;,&quot;telephone&quot;:&quot;12345&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:19,&quot;firstName&quot;:&quot;Elizabeth&quot;,&quot;lastName&quot;:&quot;Davies&quot;,&quot;address&quot;:&quot;A-10&quot;,&quot;city&quot;:&quot;PUNE&quot;,&quot;telephone&quot;:&quot;12345&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:21,&quot;firstName&quot;:&quot;Elizabeth&quot;,&quot;lastName&quot;:&quot;Davies&quot;,&quot;address&quot;:&quot;A-10&quot;,&quot;city&quot;:&quot;PUNE&quot;,&quot;telephone&quot;:&quot;12345&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:23,&quot;firstName&quot;:&quot;Prashant&quot;,&quot;lastName&quot;:&quot;Tathe&quot;,&quot;address&quot;:&quot;29, Rd Number 9, Gananjay Society, Chaitanya Nagar, Kothrud, Pune, Maharashtra 411058, India&quot;,&quot;city&quot;:&quot;Pune City West&quot;,&quot;telephone&quot;:&quot;1234567890&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:24,&quot;firstName&quot;:&quot;Ross&quot;,&quot;lastName&quot;:&quot;Geller&quot;,&quot;address&quot;:&quot;flat 401&quot;,&quot;city&quot;:&quot;Mumbai&quot;,&quot;telephone&quot;:&quot;963789&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:28,&quot;firstName&quot;:&quot;Saniya&quot;,&quot;lastName&quot;:&quot;Bhaldar&quot;,&quot;address&quot;:&quot;Sai Colony&quot;,&quot;city&quot;:&quot;Satara&quot;,&quot;telephone&quot;:&quot;98706&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:35,&quot;firstName&quot;:&quot;Ross&quot;,&quot;lastName&quot;:&quot;Geller&quot;,&quot;address&quot;:&quot;flat 401&quot;,&quot;city&quot;:&quot;Mumbai&quot;,&quot;telephone&quot;:&quot;963789&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:37,&quot;firstName&quot;:&quot;Ross&quot;,&quot;lastName&quot;:&quot;Geller&quot;,&quot;address&quot;:&quot;flat 401&quot;,&quot;city&quot;:&quot;Mumbai&quot;,&quot;telephone&quot;:&quot;963789&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:39,&quot;firstName&quot;:&quot;Sara&quot;,&quot;lastName&quot;:&quot;Mane&quot;,&quot;address&quot;:&quot;10 street&quot;,&quot;city&quot;:&quot;Mumbai&quot;,&quot;telephone&quot;:&quot;9870688977&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:41,&quot;firstName&quot;:&quot;newOwner&quot;,&quot;lastName&quot;:&quot;newOwner1234&quot;,&quot;address&quot;:&quot;test123&quot;,&quot;city&quot;:&quot;test&quot;,&quot;telephone&quot;:&quot;1234567892&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:43,&quot;firstName&quot;:&quot;Sarah&quot;,&quot;lastName&quot;:&quot;John&quot;,&quot;address&quot;:&quot;10 street&quot;,&quot;city&quot;:&quot;NewYork&quot;,&quot;telephone&quot;:&quot;9870688977&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:44,&quot;firstName&quot;:&quot;Jesus&quot;,&quot;lastName&quot;:&quot;Jones&quot;,&quot;address&quot;:&quot;4568&quot;,&quot;city&quot;:&quot;Mexia&quot;,&quot;telephone&quot;:&quot;2542379152&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:46,&quot;firstName&quot;:&quot;Jesus&quot;,&quot;lastName&quot;:&quot;Jones&quot;,&quot;address&quot;:&quot;4568&quot;,&quot;city&quot;:&quot;Mexia&quot;,&quot;telephone&quot;:&quot;2542379152&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:48,&quot;firstName&quot;:&quot;Sarah&quot;,&quot;lastName&quot;:&quot;John&quot;,&quot;address&quot;:&quot;10 street&quot;,&quot;city&quot;:&quot;NewYork&quot;,&quot;telephone&quot;:&quot;9870688977&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:49,&quot;firstName&quot;:&quot;Ross&quot;,&quot;lastName&quot;:&quot;Geller&quot;,&quot;address&quot;:&quot;flat 401&quot;,&quot;city&quot;:&quot;Mumbai&quot;,&quot;telephone&quot;:&quot;963789&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:51,&quot;firstName&quot;:&quot;Sana&quot;,&quot;lastName&quot;:&quot;Khan&quot;,&quot;address&quot;:&quot;15 street&quot;,&quot;city&quot;:&quot;NewYork&quot;,&quot;telephone&quot;:&quot;9870688977&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:52,&quot;firstName&quot;:&quot;Ross&quot;,&quot;lastName&quot;:&quot;Geller&quot;,&quot;address&quot;:&quot;flat 401&quot;,&quot;city&quot;:&quot;Mumbai&quot;,&quot;telephone&quot;:&quot;963789&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:53,&quot;firstName&quot;:&quot;Sana&quot;,&quot;lastName&quot;:&quot;Khan&quot;,&quot;address&quot;:&quot;15 street&quot;,&quot;city&quot;:&quot;NewYork&quot;,&quot;telephone&quot;:&quot;9870688977&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:54,&quot;firstName&quot;:&quot;Sana&quot;,&quot;lastName&quot;:&quot;Khan&quot;,&quot;address&quot;:&quot;15 street&quot;,&quot;city&quot;:&quot;NewYork&quot;,&quot;telephone&quot;:&quot;9870688977&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:55,&quot;firstName&quot;:&quot;Raj&quot;,&quot;lastName&quot;:&quot;Mane&quot;,&quot;address&quot;:&quot;15 street&quot;,&quot;city&quot;:&quot;NewYork&quot;,&quot;telephone&quot;:&quot;9870688977&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:56,&quot;firstName&quot;:&quot;Raj&quot;,&quot;lastName&quot;:&quot;Mane&quot;,&quot;address&quot;:&quot;15 street&quot;,&quot;city&quot;:&quot;NewYork&quot;,&quot;telephone&quot;:&quot;9870688977&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:58,&quot;firstName&quot;:&quot;Ross&quot;,&quot;lastName&quot;:&quot;Geller&quot;,&quot;address&quot;:&quot;flat 401&quot;,&quot;city&quot;:&quot;Mumbai&quot;,&quot;telephone&quot;:&quot;963789&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:59,&quot;firstName&quot;:&quot;Raj&quot;,&quot;lastName&quot;:&quot;Mane&quot;,&quot;address&quot;:&quot;15 street&quot;,&quot;city&quot;:&quot;NewYork&quot;,&quot;telephone&quot;:&quot;9870688977&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:60,&quot;firstName&quot;:&quot;Ross&quot;,&quot;lastName&quot;:&quot;Geller&quot;,&quot;address&quot;:&quot;flat 401&quot;,&quot;city&quot;:&quot;Mumbai&quot;,&quot;telephone&quot;:&quot;963789&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:61,&quot;firstName&quot;:&quot;Howard&quot;,&quot;lastName&quot;:&quot;Grill&quot;,&quot;address&quot;:&quot;Silveria woods&quot;,&quot;city&quot;:&quot;PUNE&quot;,&quot;telephone&quot;:&quot;9825410365&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:62,&quot;firstName&quot;:&quot;Ross&quot;,&quot;lastName&quot;:&quot;Geller&quot;,&quot;address&quot;:&quot;flat 401&quot;,&quot;city&quot;:&quot;Mumbai&quot;,&quot;telephone&quot;:&quot;963789&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:63,&quot;firstName&quot;:&quot;Howard&quot;,&quot;lastName&quot;:&quot;Grill&quot;,&quot;address&quot;:&quot;Silveria woods&quot;,&quot;city&quot;:&quot;PUNE&quot;,&quot;telephone&quot;:&quot;9825410365&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:64,&quot;firstName&quot;:&quot;Howard&quot;,&quot;lastName&quot;:&quot;Grill&quot;,&quot;address&quot;:&quot;Silveria woods&quot;,&quot;city&quot;:&quot;PUNE&quot;,&quot;telephone&quot;:&quot;9825410365&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:65,&quot;firstName&quot;:&quot;Ross&quot;,&quot;lastName&quot;:&quot;Geller&quot;,&quot;address&quot;:&quot;flat 401&quot;,&quot;city&quot;:&quot;Mumbai&quot;,&quot;telephone&quot;:&quot;963789&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:66,&quot;firstName&quot;:&quot;Ross&quot;,&quot;lastName&quot;:&quot;Geller&quot;,&quot;address&quot;:&quot;flat 401&quot;,&quot;city&quot;:&quot;Mumbai&quot;,&quot;telephone&quot;:&quot;963789&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:67,&quot;firstName&quot;:&quot;Ross&quot;,&quot;lastName&quot;:&quot;Geller&quot;,&quot;address&quot;:&quot;flat 401&quot;,&quot;city&quot;:&quot;Mumbai&quot;,&quot;telephone&quot;:&quot;963789&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:68,&quot;firstName&quot;:&quot;Ross&quot;,&quot;lastName&quot;:&quot;Geller&quot;,&quot;address&quot;:&quot;flat 401&quot;,&quot;city&quot;:&quot;Mumbai&quot;,&quot;telephone&quot;:&quot;963789&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:69,&quot;firstName&quot;:&quot;Ross&quot;,&quot;lastName&quot;:&quot;Geller&quot;,&quot;address&quot;:&quot;flat 401&quot;,&quot;city&quot;:&quot;Mumbai&quot;,&quot;telephone&quot;:&quot;963789&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:70,&quot;firstName&quot;:&quot;Jesus&quot;,&quot;lastName&quot;:&quot;Jones&quot;,&quot;address&quot;:&quot;4568&quot;,&quot;city&quot;:&quot;Mexia&quot;,&quot;telephone&quot;:&quot;2542379152&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:71,&quot;firstName&quot;:&quot;Jesus&quot;,&quot;lastName&quot;:&quot;Jones&quot;,&quot;address&quot;:&quot;4568&quot;,&quot;city&quot;:&quot;Mexia&quot;,&quot;telephone&quot;:&quot;2542379152&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:72,&quot;firstName&quot;:&quot;Jesus&quot;,&quot;lastName&quot;:&quot;Jones&quot;,&quot;address&quot;:&quot;4568&quot;,&quot;city&quot;:&quot;Mexia&quot;,&quot;telephone&quot;:&quot;2542379152&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:73,&quot;firstName&quot;:&quot;Jesus&quot;,&quot;lastName&quot;:&quot;Jones&quot;,&quot;address&quot;:&quot;4568&quot;,&quot;city&quot;:&quot;Mexia&quot;,&quot;telephone&quot;:&quot;2542379152&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:74,&quot;firstName&quot;:&quot;Howard&quot;,&quot;lastName&quot;:&quot;Grill&quot;,&quot;address&quot;:&quot;Silveria woods&quot;,&quot;city&quot;:&quot;PUNE&quot;,&quot;telephone&quot;:&quot;9825410365&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:75,&quot;firstName&quot;:&quot;Jesus&quot;,&quot;lastName&quot;:&quot;Jones&quot;,&quot;address&quot;:&quot;4568&quot;,&quot;city&quot;:&quot;Mexia&quot;,&quot;telephone&quot;:&quot;2542379152&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:76,&quot;firstName&quot;:&quot;Jesus&quot;,&quot;lastName&quot;:&quot;Jones&quot;,&quot;address&quot;:&quot;4568&quot;,&quot;city&quot;:&quot;Mexia&quot;,&quot;telephone&quot;:&quot;2542379152&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:77,&quot;firstName&quot;:&quot;Jesus&quot;,&quot;lastName&quot;:&quot;Jones&quot;,&quot;address&quot;:&quot;4568&quot;,&quot;city&quot;:&quot;Mexia&quot;,&quot;telephone&quot;:&quot;2542379152&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:78,&quot;firstName&quot;:&quot;Ross&quot;,&quot;lastName&quot;:&quot;Geller&quot;,&quot;address&quot;:&quot;flat 401&quot;,&quot;city&quot;:&quot;Mumbai&quot;,&quot;telephone&quot;:&quot;963789&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:79,&quot;firstName&quot;:&quot;Matthew&quot;,&quot;lastName&quot;:&quot;Perry&quot;,&quot;address&quot;:&quot;640 Cardinal Ave.&quot;,&quot;city&quot;:&quot;Sun Prairie&quot;,&quot;telephone&quot;:&quot;7085551749&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:80,&quot;firstName&quot;:&quot;Matthew&quot;,&quot;lastName&quot;:&quot;Perry&quot;,&quot;address&quot;:&quot;640 Cardinal Ave.&quot;,&quot;city&quot;:&quot;Sun Prairie&quot;,&quot;telephone&quot;:&quot;7085551749&quot;,&quot;pets&quot;:[]},{&quot;id&quot;:81,&quot;firstName&quot;:&quot;Prashant&quot;,&quot;lastName&quot;:&quot;Tathe&quot;,&quot;address&quot;:&quot;address 1&quot;,&quot;city&quot;:&quot;city 1&quot;,&quot;telephone&quot;:&quot;1234567890&quot;,&quot;pets&quot;:[]}]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.3</a> at 28-Dec-2020, 6:48:24 pm</p>
+</div>
+</div>
+</body>
+</html>

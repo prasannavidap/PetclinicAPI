@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ServicesApiTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-28T13:18:22" hostname="DESKTOP-CJDRQHQ" time="2.458">
+  <properties/>
+  <testcase name="getServices_DefaultLimit_ShouldReturn10Results()" classname="ServicesApiTest" time="2.458">
+    <system-out><![CDATA[18:48:22.113 - [ServicesApiClient] INFO  : Initiated petclinic.api.services.ServicesApiClient instance
+18:48:22.115 - [ApiCaller] INFO  : Request:
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/actuator/health
+Body:			<none>
+18:48:23.231 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+{"status":"UP"}
+]]></system-out>
+    <system-err><![CDATA[]]></system-err>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
